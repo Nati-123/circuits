@@ -1,0 +1,2664 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An intelligent interactive Circuits textbook for EE and CS students with AI-generated content and simulations.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://nati-123.github.io/circuits/chapters/03-kirchhoffs-laws-topology/quiz/">
+      
+      
+        <link rel="prev" href="../content/">
+      
+      
+        <link rel="next" href="../../04-dc-circuit-analysis/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Quiz and Problems - Circuits 1</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-9J4MVE6LWP"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-9J4MVE6LWP",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-9J4MVE6LWP",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-3-quiz-and-problems-kirchhoffs-laws-and-circuit-topology" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Circuits 1" class="md-header__button md-logo" aria-label="Circuits 1" data-md-component="logo">
+      
+  <img src="../../../img/course-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Circuits 1
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Quiz and Problems
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Nati-123/circuits" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Circuits 1" class="md-nav__button md-logo" aria-label="Circuits 1" data-md-component="logo">
+      
+  <img src="../../../img/course-logo.png" alt="logo">
+
+    </a>
+    Circuits 1
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Nati-123/circuits" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About This Course
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../course-description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course Description
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapters
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chapters
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../01-electric-charge-basic-quantities/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Electric Charge and Quantities
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../02-ohms-law-basic-configurations/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Ohm's Law and Configurations
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Kirchhoff's Laws and Topology
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    3. Kirchhoff's Laws and Topology
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../content/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter Content
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quiz and Problems
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quiz and Problems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-choice-quiz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiple Choice Quiz
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practice Problems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practice Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-1-kcl-at-multiple-nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem 1 — KCL at Multiple Nodes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-2-kvl-in-a-multi-source-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem 2 — KVL in a Multi-Source Loop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-3-node-voltage-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem 3 — Node Voltage Method
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-4-mesh-current-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem 4 — Mesh Current Method
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-5-delta-to-wye-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem 5 — Delta-to-Wye Conversion
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../04-dc-circuit-analysis/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. DC Circuit Analysis
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../05-passive-components/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Passive Components
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../06-transient-analysis-rc-rl/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Transient Analysis RC/RL
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../07-second-order-rlc-circuits/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Second-Order RLC Circuits
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../08-ac-signals-sinusoidal/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. AC Signals and Sinusoids
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../09-phasors-complex-impedance/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Phasors and Impedance
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../10-ac-power-analysis/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. AC Power Analysis
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../11-frequency-response-bode/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Frequency Response and Bode
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../12-filters-resonance/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Filters and Resonance
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../13-operational-amplifiers/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. Operational Amplifiers
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../14-signals-audio-lab/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. Signal Analysis and Fourier
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../15-audio-applications/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    15. Audio Applications
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../16-laboratory-techniques/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    16. Laboratory Techniques
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../sims/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MicroSims
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../circuits/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Circuits
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../old-sections/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Supplementary Sections
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../learning-graph/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning Graph
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../prompts/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sample Prompts
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How We Built This Site
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../feature-checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feature Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    References
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    License
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-choice-quiz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiple Choice Quiz
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practice Problems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practice Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem-1-kcl-at-multiple-nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem 1 — KCL at Multiple Nodes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-2-kvl-in-a-multi-source-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem 2 — KVL in a Multi-Source Loop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-3-node-voltage-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem 3 — Node Voltage Method
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-4-mesh-current-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem 4 — Mesh Current Method
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problem-5-delta-to-wye-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem 5 — Delta-to-Wye Conversion
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    3. Kirchhoff's Laws and Topology
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/Nati-123/circuits/blob/master/docs/chapters/03-kirchhoffs-laws-topology/quiz.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="chapter-3-quiz-and-problems-kirchhoffs-laws-and-circuit-topology">Chapter 3 Quiz and Problems — Kirchhoff's Laws and Circuit Topology</h1>
+<h2 id="multiple-choice-quiz">Multiple Choice Quiz</h2>
+<p><strong>1. Kirchhoff's Current Law (KCL) is a consequence of which fundamental principle?</strong></p>
+<ul>
+<li>[ ] A) Conservation of energy</li>
+<li>[ ] B) Conservation of charge</li>
+<li>[ ] C) Ohm's Law</li>
+<li>[ ] D) Conservation of momentum</li>
+</ul>
+<details class="success">
+<summary>Answer</summary>
+<p><strong>B) Conservation of charge.</strong> KCL states that the algebraic sum of all currents at a node equals zero — no charge accumulates at a junction. Every coulomb entering must leave. KVL (not KCL) is the consequence of conservation of energy.</p>
+</details>
+<hr />
+<p><strong>2. Kirchhoff's Voltage Law (KVL) states that around any closed loop:</strong></p>
+<ul>
+<li>[ ] A) The sum of all currents equals zero</li>
+<li>[ ] B) The sum of all resistances equals zero</li>
+<li>[ ] C) The algebraic sum of all voltages equals zero</li>
+<li>[ ] D) The product of voltage and current is constant</li>
+</ul>
+<details class="success">
+<summary>Answer</summary>
+<p><strong>C) The algebraic sum of all voltages equals zero.</strong> KVL enforces conservation of energy: voltage rises from sources are exactly balanced by voltage drops across resistive elements as you traverse any closed loop.</p>
+</details>
+<hr />
+<p><strong>3. What is the difference between a loop and a mesh in circuit topology?</strong></p>
+<ul>
+<li>[ ] A) A loop carries current; a mesh does not</li>
+<li>[ ] B) A mesh is a loop that contains no smaller loops within it</li>
+<li>[ ] C) A loop exists only in DC circuits; a mesh exists in AC circuits</li>
+<li>[ ] D) There is no difference — the terms are interchangeable</li>
+</ul>
+<details class="success">
+<summary>Answer</summary>
+<p><strong>B) A mesh is a loop that contains no smaller loops within it.</strong> A loop is any closed path through the circuit. A mesh (also called a window pane) is a minimal loop — it encloses no other loops. All meshes are loops, but not all loops are meshes.</p>
+</details>
+<hr />
+<p><strong>4. For a circuit with <span class="arithmatex">\(n\)</span> nodes, how many independent KCL equations can be written?</strong></p>
+<ul>
+<li>[ ] A) <span class="arithmatex">\(n\)</span></li>
+<li>[ ] B) <span class="arithmatex">\(n + 1\)</span></li>
+<li>[ ] C) <span class="arithmatex">\(n - 1\)</span></li>
+<li>[ ] D) <span class="arithmatex">\(2n\)</span></li>
+</ul>
+<details class="success">
+<summary>Answer</summary>
+<p><strong>C) <span class="arithmatex">\(n - 1\)</span>.</strong> One node is designated as the reference (ground), and KCL is written at each of the remaining <span class="arithmatex">\(n - 1\)</span> nodes. Writing KCL at the reference node gives a redundant equation (the negative sum of all others), so it provides no new information.</p>
+</details>
+<hr />
+<p><strong>5. At a node, currents of <span class="arithmatex">\(I_1 = 4\)</span> A and <span class="arithmatex">\(I_2 = 7\)</span> A flow in, and <span class="arithmatex">\(I_3\)</span> flows out. What is <span class="arithmatex">\(I_3\)</span>?</strong></p>
+<ul>
+<li>[ ] A) 3 A</li>
+<li>[ ] B) 7 A</li>
+<li>[ ] C) 11 A</li>
+<li>[ ] D) −11 A</li>
+</ul>
+<details class="success">
+<summary>Answer</summary>
+<p><strong>C) 11 A.</strong> By KCL, the sum of currents into a node equals the sum of currents out of the node:</p>
+<p>[I_1 + I_2 = I_3]
+[4 + 7 = 11 \text{ A}]</p>
+</details>
+<hr />
+<p><strong>6. A series loop contains a 24 V source, <span class="arithmatex">\(R_1 = 4\)</span> Ω, and <span class="arithmatex">\(R_2 = 8\)</span> Ω. Using KVL, the current in the loop is:</strong></p>
+<ul>
+<li>[ ] A) 1 A</li>
+<li>[ ] B) 2 A</li>
+<li>[ ] C) 3 A</li>
+<li>[ ] D) 6 A</li>
+</ul>
+<details class="success">
+<summary>Answer</summary>
+<p><strong>B) 2 A.</strong> Applying KVL around the loop:</p>
+<p>[+24 - I(4) - I(8) = 0]
+[24 = 12I]
+[I = 2 \text{ A}]</p>
+</details>
+<hr />
+<p><strong>7. In the node voltage method, which node is assigned a voltage of zero?</strong></p>
+<ul>
+<li>[ ] A) The node with the highest voltage</li>
+<li>[ ] B) The node connected to the positive terminal of the source</li>
+<li>[ ] C) The reference node (ground)</li>
+<li>[ ] D) The node with the most branches</li>
+</ul>
+<details class="success">
+<summary>Answer</summary>
+<p><strong>C) The reference node (ground).</strong> The reference node is assigned <span class="arithmatex">\(V = 0\)</span> by definition. All other node voltages are measured relative to this datum. Its physical location is arbitrary — it doesn't need to connect to earth ground.</p>
+</details>
+<hr />
+<p><strong>8. A supernode arises in the node voltage method when:</strong></p>
+<ul>
+<li>[ ] A) Two nodes are connected by a resistor</li>
+<li>[ ] B) A voltage source connects two non-reference nodes</li>
+<li>[ ] C) A current source connects to the reference node</li>
+<li>[ ] D) More than four branches meet at a single node</li>
+</ul>
+<details class="success">
+<summary>Answer</summary>
+<p><strong>B) A voltage source connects two non-reference nodes.</strong> When a voltage source sits between two non-reference nodes, the current through it is unknown, so KCL cannot be written directly at either node. The supernode treats both nodes together as a single entity and adds the constraint equation <span class="arithmatex">\(V_a - V_b = V_s\)</span>.</p>
+</details>
+<hr />
+<p><strong>9. The superposition principle states that in a linear circuit with multiple sources:</strong></p>
+<ul>
+<li>[ ] A) All sources can be replaced by a single equivalent source</li>
+<li>[ ] B) The response is the product of individual source responses</li>
+<li>[ ] C) The response is the sum of responses due to each source acting alone</li>
+<li>[ ] D) Sources must be analyzed simultaneously to get the correct result</li>
+</ul>
+<details class="success">
+<summary>Answer</summary>
+<p><strong>C) The response is the sum of responses due to each source acting alone.</strong> For each sub-analysis, deactivate all other sources: replace voltage sources with short circuits and current sources with open circuits. Superposition applies only to linear circuits.</p>
+</details>
+<hr />
+<p><strong>10. A delta (Δ) configuration of three resistors <span class="arithmatex">\(R_a = R_b = R_c = 30\)</span> Ω is converted to an equivalent wye (Y). Each wye resistor equals:</strong></p>
+<ul>
+<li>[ ] A) 90 Ω</li>
+<li>[ ] B) 30 Ω</li>
+<li>[ ] C) 10 Ω</li>
+<li>[ ] D) 3 Ω</li>
+</ul>
+<details class="success">
+<summary>Answer</summary>
+<p><strong>C) 10 Ω.</strong> For a balanced delta (all resistors equal), the delta-to-wye conversion formula gives:</p>
+<div class="arithmatex">\[R_Y = \frac{R_\Delta}{3} = \frac{30}{3} = 10 \text{ Ω}\]</div>
+<p>For the general (unbalanced) case: <span class="arithmatex">\(R_Y = \frac{\text{product of adjacent } \Delta \text{ resistors}}{\text{sum of all } \Delta \text{ resistors}}\)</span>.</p>
+</details>
+<hr />
+<h2 id="practice-problems">Practice Problems</h2>
+<h3 id="problem-1-kcl-at-multiple-nodes">Problem 1 — KCL at Multiple Nodes</h3>
+<p>At a node in a circuit, five branch currents are present:
+- <span class="arithmatex">\(I_1 = 6\)</span> A entering
+- <span class="arithmatex">\(I_2 = 2\)</span> A entering
+- <span class="arithmatex">\(I_3 = 5\)</span> A leaving
+- <span class="arithmatex">\(I_4 = ?\)</span> leaving
+- <span class="arithmatex">\(I_5 = 1\)</span> A entering</p>
+<p><strong>(a)</strong> Write the KCL equation for this node.</p>
+<p><strong>(b)</strong> Solve for <span class="arithmatex">\(I_4\)</span>.</p>
+<p><strong>(c)</strong> Verify the result by checking that the sum of all currents equals zero.</p>
+<details class="success">
+<summary>Solution</summary>
+<p><strong>(a)</strong> KCL states: sum of currents entering = sum of currents leaving</p>
+<div class="arithmatex">\[\text{Entering: } I_1 + I_2 + I_5 = \text{Leaving: } I_3 + I_4\]</div>
+<p><strong>(b)</strong> Substituting known values:</p>
+<p>[6 + 2 + 1 = 5 + I_4]
+[9 = 5 + I_4]
+[I_4 = 4 \text{ A (leaving the node)}]</p>
+<p><strong>(c)</strong> Verification (entering positive, leaving negative):</p>
+<div class="arithmatex">\[6 + 2 + 1 - 5 - 4 = 0 \quad \checkmark\]</div>
+</details>
+<hr />
+<h3 id="problem-2-kvl-in-a-multi-source-loop">Problem 2 — KVL in a Multi-Source Loop</h3>
+<p>A single loop circuit contains the following elements in series (traversed clockwise):
+- 18 V voltage source (+ terminal encountered first → rise)
+- <span class="arithmatex">\(R_1 = 3\)</span> Ω
+- 6 V voltage source (− terminal encountered first → rise)
+- <span class="arithmatex">\(R_2 = 6\)</span> Ω</p>
+<p><strong>(a)</strong> Write the KVL equation around the loop.</p>
+<p><strong>(b)</strong> Solve for the loop current <span class="arithmatex">\(I\)</span>.</p>
+<p><strong>(c)</strong> Find the voltage across <span class="arithmatex">\(R_2\)</span>.</p>
+<details class="success">
+<summary>Solution</summary>
+<p><strong>(a)</strong> Traversing clockwise, applying KVL (rises positive, drops negative):</p>
+<div class="arithmatex">\[+18 - I(3) + 6 - I(6) = 0\]</div>
+<p>Note: The 6 V source with − terminal first means entering the − side and exiting the + side → voltage <strong>rise</strong> of +6 V.</p>
+<p><strong>(b)</strong> Solving for <span class="arithmatex">\(I\)</span>:</p>
+<p>[24 - 9I = 0]
+[I = \frac{24}{9} = 2.67 \text{ A}]</p>
+<p><strong>(c)</strong> Voltage across <span class="arithmatex">\(R_2\)</span>:</p>
+<div class="arithmatex">\[V_{R_2} = I \times R_2 = 2.67 \times 6 = 16 \text{ V}\]</div>
+</details>
+<hr />
+<h3 id="problem-3-node-voltage-method">Problem 3 — Node Voltage Method</h3>
+<p>A circuit has three nodes: ground (reference), Node 1, and Node 2. Component connections:
+- 12 V source between Node 1 and ground (Node 1 is positive terminal)
+- <span class="arithmatex">\(R_1 = 6\)</span> Ω between Node 1 and Node 2
+- <span class="arithmatex">\(R_2 = 4\)</span> Ω between Node 2 and ground
+- <span class="arithmatex">\(R_3 = 12\)</span> Ω between Node 2 and ground</p>
+<p><strong>(a)</strong> Identify the known and unknown node voltages.</p>
+<p><strong>(b)</strong> Write the KCL equation at Node 2.</p>
+<p><strong>(c)</strong> Solve for <span class="arithmatex">\(V_2\)</span>.</p>
+<p><strong>(d)</strong> Find the current through <span class="arithmatex">\(R_1\)</span>.</p>
+<details class="success">
+<summary>Solution</summary>
+<p><strong>(a)</strong> Known: <span class="arithmatex">\(V_1 = 12\)</span> V (set directly by the voltage source). Unknown: <span class="arithmatex">\(V_2\)</span>.</p>
+<p><strong>(b)</strong> KCL at Node 2 — sum of currents leaving Node 2 equals zero:</p>
+<div class="arithmatex">\[\frac{V_2 - V_1}{R_1} + \frac{V_2}{R_2} + \frac{V_2}{R_3} = 0\]</div>
+<div class="arithmatex">\[\frac{V_2 - 12}{6} + \frac{V_2}{4} + \frac{V_2}{12} = 0\]</div>
+<p><strong>(c)</strong> Multiply through by 12 (LCD):</p>
+<p>[2(V_2 - 12) + 3V_2 + V_2 = 0]
+[2V_2 - 24 + 3V_2 + V_2 = 0]
+[6V_2 = 24]
+[V_2 = 4 \text{ V}]</p>
+<p><strong>(d)</strong> Current through <span class="arithmatex">\(R_1\)</span> (from Node 1 to Node 2):</p>
+<div class="arithmatex">\[I_{R_1} = \frac{V_1 - V_2}{R_1} = \frac{12 - 4}{6} = \frac{8}{6} = 1.33 \text{ A}\]</div>
+</details>
+<hr />
+<h3 id="problem-4-mesh-current-method">Problem 4 — Mesh Current Method</h3>
+<p>A circuit has two meshes:
+- <strong>Mesh 1</strong>: 10 V source, <span class="arithmatex">\(R_1 = 2\)</span> Ω (shared with Mesh 2), <span class="arithmatex">\(R_2 = 3\)</span> Ω
+- <strong>Mesh 2</strong>: <span class="arithmatex">\(R_1 = 2\)</span> Ω (shared), <span class="arithmatex">\(R_3 = 4\)</span> Ω</p>
+<p>Let <span class="arithmatex">\(I_1\)</span> be the clockwise mesh current in Mesh 1, and <span class="arithmatex">\(I_2\)</span> be the clockwise mesh current in Mesh 2. There is no source in Mesh 2.</p>
+<p><strong>(a)</strong> Write the KVL mesh equation for Mesh 1.</p>
+<p><strong>(b)</strong> Write the KVL mesh equation for Mesh 2.</p>
+<p><strong>(c)</strong> Solve the system of equations for <span class="arithmatex">\(I_1\)</span> and <span class="arithmatex">\(I_2\)</span>.</p>
+<p><strong>(d)</strong> Find the actual current through the shared resistor <span class="arithmatex">\(R_1\)</span>.</p>
+<details class="success">
+<summary>Solution</summary>
+<p><strong>(a)</strong> Mesh 1 KVL (clockwise, drops negative):</p>
+<p>[10 - I_1(R_2) - (I_1 - I_2)(R_1) = 0]
+[10 - 3I_1 - 2(I_1 - I_2) = 0]
+[10 - 5I_1 + 2I_2 = 0 \quad \text{...(1)}]</p>
+<p><strong>(b)</strong> Mesh 2 KVL (no source, drops only):</p>
+<p>[-(I_2 - I_1)(R_1) - I_2(R_3) = 0]
+[-2(I_2 - I_1) - 4I_2 = 0]
+[2I_1 - 6I_2 = 0 \quad \text{...(2)}]</p>
+<p><strong>(c)</strong> From equation (2): <span class="arithmatex">\(I_1 = 3I_2\)</span></p>
+<p>Substitute into equation (1):</p>
+<p>[10 - 5(3I_2) + 2I_2 = 0]
+[10 - 13I_2 = 0]
+[I_2 = \frac{10}{13} \approx 0.769 \text{ A}]
+[I_1 = 3I_2 = \frac{30}{13} \approx 2.31 \text{ A}]</p>
+<p><strong>(d)</strong> The current through <span class="arithmatex">\(R_1\)</span> is the difference of the two mesh currents (Mesh 1 flows down through <span class="arithmatex">\(R_1\)</span>, Mesh 2 flows up):</p>
+<div class="arithmatex">\[I_{R_1} = I_1 - I_2 = \frac{30}{13} - \frac{10}{13} = \frac{20}{13} \approx 1.54 \text{ A}\]</div>
+</details>
+<hr />
+<h3 id="problem-5-delta-to-wye-conversion">Problem 5 — Delta-to-Wye Conversion</h3>
+<p>Three resistors are connected in a delta configuration: <span class="arithmatex">\(R_{ab} = 30\)</span> Ω, <span class="arithmatex">\(R_{bc} = 60\)</span> Ω, <span class="arithmatex">\(R_{ca} = 90\)</span> Ω.</p>
+<p><strong>(a)</strong> Convert to an equivalent wye configuration. Find <span class="arithmatex">\(R_a\)</span>, <span class="arithmatex">\(R_b\)</span>, and <span class="arithmatex">\(R_c\)</span>.</p>
+<p><strong>(b)</strong> Verify that the sum <span class="arithmatex">\(R_a + R_b + R_c\)</span> is less than the smallest delta resistor (a quick sanity check for the conversion).</p>
+<details class="success">
+<summary>Solution</summary>
+<p><strong>(a)</strong> Delta-to-wye conversion formulas. Let the sum of delta resistors be:</p>
+<div class="arithmatex">\[\Sigma R_\Delta = R_{ab} + R_{bc} + R_{ca} = 30 + 60 + 90 = 180 \text{ Ω}\]</div>
+<div class="arithmatex">\[R_a = \frac{R_{ab} \cdot R_{ca}}{\Sigma R_\Delta} = \frac{30 \times 90}{180} = \frac{2700}{180} = 15 \text{ Ω}\]</div>
+<div class="arithmatex">\[R_b = \frac{R_{ab} \cdot R_{bc}}{\Sigma R_\Delta} = \frac{30 \times 60}{180} = \frac{1800}{180} = 10 \text{ Ω}\]</div>
+<div class="arithmatex">\[R_c = \frac{R_{bc} \cdot R_{ca}}{\Sigma R_\Delta} = \frac{60 \times 90}{180} = \frac{5400}{180} = 30 \text{ Ω}\]</div>
+<p><strong>(b)</strong> Sanity check:</p>
+<div class="arithmatex">\[R_a + R_b + R_c = 15 + 10 + 30 = 55 \text{ Ω}\]</div>
+<p>The smallest delta resistor is 30 Ω, and 55 Ω &gt; 30 Ω, so this particular check doesn't apply here. However, each individual wye resistor (15, 10, 30 Ω) is smaller than at least two of the delta resistors — which is the correct expectation for a delta-to-wye conversion.</p>
+</details>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../content/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Chapter Content">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Chapter Content
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../04-dc-circuit-analysis/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024, 2025, 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../js/extra.js"></script>
+      
+        <script src="../../../js/audio-reader.js"></script>
+      
+        <script src="../../../js/katex.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
