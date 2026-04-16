@@ -649,7 +649,15 @@
          <lastmod>2026-04-16</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/circuits/sims/circuit-simplification/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/circuits/sims/circuit-symbol-flashcards/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/circuits/sims/circuit-topology-explorer/</loc>
          <lastmod>2026-04-16</lastmod>
     </url>
     <url>
@@ -674,6 +682,10 @@
     </url>
     <url>
          <loc>https://dmccreary.github.io/circuits/sims/decibel-scale/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/circuits/sims/delta-wye-transform/</loc>
          <lastmod>2026-04-16</lastmod>
     </url>
     <url>
@@ -725,7 +737,15 @@
          <lastmod>2026-04-16</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/circuits/sims/kcl-node-viz/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/circuits/sims/kirchhoffs-law/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/circuits/sims/kvl-loop-walkthrough/</loc>
          <lastmod>2026-04-16</lastmod>
     </url>
     <url>
@@ -741,11 +761,31 @@
          <lastmod>2026-04-16</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/circuits/sims/linear-vs-nonlinear/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/circuits/sims/matrix-equation-builder/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/circuits/sims/mesh-supermesh-compare/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/circuits/sims/mutual-inductance/</loc>
          <lastmod>2026-04-16</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/circuits/sims/natural-frequency-calculator/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/circuits/sims/node-branch-trainer/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/circuits/sims/ohms-law-calculator/</loc>
          <lastmod>2026-04-16</lastmod>
     </url>
     <url>
@@ -765,6 +805,10 @@
          <lastmod>2026-04-16</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/circuits/sims/parallel-circuit/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/circuits/sims/parallel-plate-capacitor/</loc>
          <lastmod>2026-04-16</lastmod>
     </url>
@@ -778,6 +822,14 @@
     </url>
     <url>
          <loc>https://dmccreary.github.io/circuits/sims/phasor-transform/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/circuits/sims/potentiometer/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/circuits/sims/power-dissipation-calc/</loc>
          <lastmod>2026-04-16</lastmod>
     </url>
     <url>
@@ -805,6 +857,14 @@
          <lastmod>2026-04-16</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/circuits/sims/resistor-color-code/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/circuits/sims/resistor-physical-structure/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/circuits/sims/resonance-comparison/</loc>
          <lastmod>2026-04-16</lastmod>
     </url>
@@ -825,7 +885,23 @@
          <lastmod>2026-04-16</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/circuits/sims/series-circuit/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/circuits/sims/series-parallel-circuit/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/circuits/sims/signal-parameters/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/circuits/sims/supernode-analysis/</loc>
+         <lastmod>2026-04-16</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/circuits/sims/superposition-demo/</loc>
          <lastmod>2026-04-16</lastmod>
     </url>
     <url>
