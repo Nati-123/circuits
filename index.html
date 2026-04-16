@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="A college-level course on circuits with extensive MicroSims.">
+        <meta name="description" content="An intelligent interactive Circuits textbook for EE and CS students with AI-generated content and simulations.">
       
       
         <meta name="author" content="Dan McCreary">
       
       
-        <link rel="canonical" href="https://nati-123.github.io/circuits/">
+        <link rel="canonical" href="https://dmccreary.github.io/circuits/">
       
       
       
-        <link rel="next" href="about/">
+        <link rel="next" href="chapters/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Circuits - Circuits 1</title>
+        <title>Cover - Circuits 1</title>
       
     
     
@@ -48,8 +48,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"JetBrains Mono"}</style>
       
     
     
@@ -78,10 +78,12 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="amber">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -90,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#circuits" class="md-skip">
+        <a href="#circuits-1" class="md-skip">
           Skip to content
         </a>
       
@@ -102,13 +104,12 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="Circuits 1" class="md-header__button md-logo" aria-label="Circuits 1" data-md-component="logo">
       
-  <img src="img/course-logo.png" alt="logo">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v1h3v2h-3v2h3v2h-3v2h3v2h-3v2h3v2h-3v1H6v-1H3v-2h3v-2H3v-2h3v-2H3V9h3V7H3V5h3zm5 11v3h1v-3zm2 0v3h1v-3zm2 0v3h1v-3z"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -125,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Circuits
+              Cover
             
           </span>
         </div>
@@ -133,7 +134,19 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="amber"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -179,7 +192,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/Nati-123/circuits" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/dmccreary/circuits" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
@@ -199,6 +212,187 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Cover
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="chapters/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Chapters
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="sims/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  MicroSims
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="learning-graph/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Learning Graph
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="prompts/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Prompts
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="faq/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  FAQ
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="glossary/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Glossary
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="about/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -208,25 +402,28 @@
               
                 
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="." title="Circuits 1" class="md-nav__button md-logo" aria-label="Circuits 1" data-md-component="logo">
       
-  <img src="img/course-logo.png" alt="logo">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v1h3v2h-3v2h3v2h-3v2h3v2h-3v2h3v2h-3v1H6v-1H3v-2h3v-2H3v-2h3v-2H3V9h3V7H3V5h3zm5 11v3h1v-3zm2 0v3h1v-3zm2 0v3h1v-3z"/></svg>
 
     </a>
     Circuits 1
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/Nati-123/circuits" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/dmccreary/circuits" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
@@ -255,6 +452,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cover
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -262,7 +477,7 @@
   <span class="md-ellipsis">
     
   
-    Home
+    Cover
   
 
     
@@ -272,60 +487,36 @@
 
       </a>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="about/" class="md-nav__link">
         
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-  <span class="md-ellipsis">
+  
     
   
-    About This Course
   
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
+        <li class="md-nav__item">
+  <a href="#an-intelligent-interactive-textbook" class="md-nav__link">
+    <span class="md-ellipsis">
       
+        An Intelligent Interactive Textbook
+      
+    </span>
+  </a>
   
+</li>
+      
+    </ul>
   
-  
-  
-    <li class="md-nav__item">
-      <a href="course-description/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Course Description
-  
-
-    
-  </span>
-  
-  
-
-      </a>
+</nav>
+      
     </li>
   
 
@@ -377,6 +568,11 @@
       
     
     
+    
+      
+      
+        
+      
     
     
       
@@ -477,8 +673,67 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
+    
+      
+      
+        
+      
     
     
       
@@ -535,60 +790,6 @@
       
         
       
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="circuits/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Circuits
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
         
       
         
@@ -604,73 +805,10 @@
     
     
     
-    
       
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="old-sections/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Supplementary Sections
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
       
         
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
     
     
       
@@ -753,8 +891,17 @@
       
         
       
+        
+      
+        
+      
     
     
+    
+      
+      
+        
+      
     
     
       
@@ -775,7 +922,7 @@
   <span class="md-ellipsis">
     
   
-    Sample Prompts
+    Prompts
   
 
     
@@ -800,9 +947,39 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="faq/" class="md-nav__link">
+    
+    
+      
         
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="faq/" class="md-nav__link">
+      
   
   
   <span class="md-ellipsis">
@@ -816,7 +993,13 @@
   
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -854,15 +1037,55 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="how-we-built-this-site/" class="md-nav__link">
+    
+    
+      
         
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="about/" class="md-nav__link">
+      
   
   
   <span class="md-ellipsis">
     
   
-    How We Built This Site
+    About
   
 
     
@@ -870,115 +1093,13 @@
   
   
 
-      </a>
-    </li>
-  
-
-    
       
+        <span class="md-nav__icon md-icon"></span>
       
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="feature-checklist/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Feature Checklist
+    </a>
   
 
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
       
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="references/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    References
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="license/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    License
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="contact/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Contact
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -1004,6 +1125,25 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#an-intelligent-interactive-textbook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        An Intelligent Interactive Textbook
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1032,7 +1172,7 @@
 
 
   
-    <a href="https://github.com/Nati-123/circuits/blob/master/docs/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/dmccreary/circuits/blob/master/docs/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1041,32 +1181,157 @@
 
 
 <style>
-.md-content__inner h1 {display: none !important;}
+/* ── Cover page refinements ─────────────────────────────────────────────── */
+.md-typeset .cover-page   { min-height: 80vh; }
+.md-typeset .cover-content { padding: 2rem 2rem 1rem 2rem; }
+.md-typeset .cover-stats  { margin: 2rem 0 1.2rem 0; }
+.md-typeset .cover-buttons { margin-top: 2rem; }
+
+/* Subtitle color */
+.md-typeset .cover-page h2 {
+  font-weight: 500;
+  color: #c4b5fd !important;
+}
+
+/* Subtle glow animation on waveform art */
+@keyframes wave-glow {
+  0%, 100% { filter: drop-shadow(0 0 2px rgba(90,62,237,.12)) brightness(1.05); }
+  50%       { filter: drop-shadow(0 0 8px rgba(90,62,237,.30)) brightness(1.14); }
+}
+@keyframes wave-glow-bottom {
+  0%, 100% { filter: drop-shadow(0 0 2px rgba(212,160,23,.08)); }
+  50%       { filter: drop-shadow(0 0 6px rgba(212,160,23,.22)); }
+}
+.md-typeset .cover-circuit svg      { animation: wave-glow        5s ease-in-out infinite; }
+.md-typeset .cover-circuit-bottom svg { animation: wave-glow-bottom 5s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .cover-circuit svg,
+  .md-typeset .cover-circuit-bottom svg { animation: none; }
+}
+
+/* Button hover */
+.md-typeset .cover-buttons .md-button {
+  transition: transform .25s ease, box-shadow .25s ease,
+              background .25s ease, color .25s ease, border-color .25s ease;
+}
+.md-typeset .cover-buttons .md-button:hover       { transform: translateY(-2px); box-shadow: 0 4px 18px rgba(90,62,237,.18); }
+.md-typeset .cover-buttons .md-button--primary:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(90,62,237,.45); }
+
+@media (max-width: 768px) {
+  .md-typeset .cover-content { padding: 1.2rem 1rem .8rem 1rem; }
+}
 </style>
-<h1 id="circuits">Circuits</h1>
-<p><img alt="Cover Image of Colorful Circuits and Graphs" src="img/cover.png" /></p>
-<p>Welcome to the website for an exciting new interactive
-undergraduate course for Artificial Intelligence-driven electronic circuits. This course is different from
-many traditional circuits courses because it uses generative AI
-and interactive simulations to teach the theory and practice
-of understanding and designing electronics circuits.</p>
-<p>We not only use generative AI to create fun circuit
-simulations, we provide you the <a href="prompts/">prompts</a> for you
-to customize interactive diagrams to your needs.</p>
-<p>From our knowledge, this is one of the first circuits
-course that assumes that all students have access
-to a generative AI program such as ChatGPT.  Because
-we make this assumption, we can leverage generative
-AI tools to create a fun interactive learning experience
-that gives you an intuitive feel for how circuits work.</p>
-<p>We also provide an extensive library of both templates
-and detailed prompts to allow
-students to generate their own experiments with
-the help of generative AI tools.</p>
-<p>Please contact me on <a href="https://www.linkedin.com/in/danmccreary/">Dan McCreary LinkedIn</a> if you have questions.</p>
-<ul>
-<li>Dan</li>
-</ul>
+
+<div class="cover-page">
+<div class="cover-circuit">
+<svg viewBox="0 0 1200 110" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:110px;display:block;">
+  
+<!-- oscilloscope grid -->
+
+
+  <line x1="0"    y1="27"  x2="1200" y2="27"  stroke="rgba(90,62,237,.12)" stroke-width="0.6"/>
+  <line x1="0"    y1="55"  x2="1200" y2="55"  stroke="rgba(90,62,237,.18)" stroke-width="0.6"/>
+  <line x1="0"    y1="83"  x2="1200" y2="83"  stroke="rgba(90,62,237,.12)" stroke-width="0.6"/>
+  <line x1="240"  y1="0"   x2="240"  y2="110" stroke="rgba(90,62,237,.10)" stroke-width="0.5"/>
+  <line x1="480"  y1="0"   x2="480"  y2="110" stroke="rgba(90,62,237,.10)" stroke-width="0.5"/>
+  <line x1="720"  y1="0"   x2="720"  y2="110" stroke="rgba(90,62,237,.10)" stroke-width="0.5"/>
+  <line x1="960"  y1="0"   x2="960"  y2="110" stroke="rgba(90,62,237,.10)" stroke-width="0.5"/>
+  
+<!-- fundamental sine wave — purple -->
+
+
+  <path d="M0,55 C30,5 90,5 120,55 C150,105 210,105 240,55 C270,5 330,5 360,55 C390,105 450,105 480,55 C510,5 570,5 600,55 C630,105 690,105 720,55 C750,5 810,5 840,55 C870,105 930,105 960,55 C990,5 1050,5 1080,55 C1110,105 1170,105 1200,55"
+        stroke="#7C5CEF" stroke-width="2.6" fill="none" opacity="0.85"/>
+  
+<!-- higher harmonic — gold, smaller amplitude -->
+
+
+  <path d="M0,55 C15,32 45,32 60,55 C75,78 105,78 120,55 C135,32 165,32 180,55 C195,78 225,78 240,55 C255,32 285,32 300,55 C315,78 345,78 360,55 C375,32 405,32 420,55 C435,78 465,78 480,55 C495,32 525,32 540,55 C555,78 585,78 600,55 C615,32 645,32 660,55 C675,78 705,78 720,55 C735,32 765,32 780,55 C795,78 825,78 840,55 C855,32 885,32 900,55 C915,78 945,78 960,55 C975,32 1005,32 1020,55 C1035,78 1065,78 1080,55 C1095,32 1125,32 1140,55 C1155,78 1185,78 1200,55"
+        stroke="#D4A017" stroke-width="1.6" fill="none" opacity="0.55"/>
+  
+<!-- decaying exponential — cyan accent, left side only -->
+
+
+  <path d="M0,10 C60,10 100,40 140,55 C180,68 220,60 260,56 C300,53 340,54 400,55"
+        stroke="#7dd3fc" stroke-width="1.4" fill="none" opacity="0.4"/>
+</svg>
+</div>
+<div class="cover-content">
+<h1 id="circuits-1">Circuits 1</h1>
+<h2 id="an-intelligent-interactive-textbook">An Intelligent Interactive Textbook</h2>
+<p><strong>EE Circuits — Analog and Signal Analysis</strong></p>
+<hr />
+<p class="cover-institution">An AI-assisted course with interactive simulations,<br>chapter quizzes, and generative AI prompt libraries.</p>
+<p class="cover-description">Covers DC/AC analysis, phasors, filters, op-amps, Fourier series,<br>and audio applications — from first principles to real-world design.</p>
+<div class="cover-stats">
+<div class="stat-item">
+<div class="stat-number">16</div>
+<div class="stat-label">Chapters</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">50+</div>
+<div class="stat-label">MicroSims</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">160</div>
+<div class="stat-label">Quiz Questions</div>
+</div>
+<div class="stat-item">
+<div class="stat-number">64</div>
+<div class="stat-label">Practice Problems</div>
+</div>
+</div>
+<div class="cover-buttons">
+<p><a class="md-button md-button--primary" href="chapters/">Enter Textbook <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg></span></a>
+<a class="md-button" href="sims/">View MicroSims <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .89-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5a2 2 0 0 0-2-2m-9 13V8l5 4"/></svg></span></a>
+<a class="md-button" href="learning-graph/">Learning Graph <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 17c-.13 0-.26 0-.39.04l-1.61-3.25a2.5 2.5 0 0 0-1.75-4.29c-.13 0-.25 0-.39.04l-1.63-3.25c.48-.45.77-1.08.77-1.79a2.5 2.5 0 0 0-5 0c0 .71.29 1.34.76 1.79L8.64 9.54c-.14-.04-.26-.04-.39-.04a2.5 2.5 0 0 0-1.75 4.29l-1.61 3.25C4.76 17 4.63 17 4.5 17a2.5 2.5 0 0 0 0 5A2.5 2.5 0 0 0 7 19.5c0-.7-.29-1.34-.76-1.79l1.62-3.25c.14.04.26.04.39.04s.25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0A2.5 2.5 0 0 0 12 17c-.13 0-.26 0-.39.04L10 13.79c.46-.45.75-1.08.75-1.79s-.29-1.34-.75-1.79l1.61-3.25c.13.04.26.04.39.04s.26 0 .39-.04L14 10.21c-.45.45-.75 1.09-.75 1.79a2.5 2.5 0 0 0 2.5 2.5c.13 0 .25 0 .39-.04l1.63 3.25c-.47.45-.77 1.09-.77 1.79a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0-2.5-2.5"/></svg></span></a></p>
+</div>
+</div>
+<div class="cover-circuit cover-circuit-bottom">
+<svg viewBox="0 0 1200 90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:90px;display:block;opacity:0.6;">
+  
+<!-- resistor zigzag symbol, repeated -->
+
+
+  <polyline points="0,45 60,45 75,20 90,70 105,20 120,70 135,20 150,70 165,45 220,45"
+            stroke="#D4A017" stroke-width="1.6" fill="none" opacity="0.7"/>
+  <polyline points="240,45 300,45 315,20 330,70 345,20 360,70 375,20 390,70 405,45 460,45"
+            stroke="#D4A017" stroke-width="1.6" fill="none" opacity="0.5"/>
+  
+<!-- capacitor symbol -->
+
+
+  <line x1="500" y1="20" x2="500" y2="70" stroke="#7C5CEF" stroke-width="2" opacity="0.7"/>
+  <line x1="520" y1="20" x2="520" y2="70" stroke="#7C5CEF" stroke-width="2" opacity="0.7"/>
+  <line x1="460" y1="45" x2="500" y2="45" stroke="#7C5CEF" stroke-width="1.5" opacity="0.5"/>
+  <line x1="520" y1="45" x2="560" y2="45" stroke="#7C5CEF" stroke-width="1.5" opacity="0.5"/>
+  
+<!-- inductor coil -->
+
+
+  <path d="M600,45 C610,25 630,25 640,45 C650,65 670,65 680,45 C690,25 710,25 720,45 C730,65 750,65 760,45 C770,25 790,25 800,45"
+        stroke="#D4A017" stroke-width="1.8" fill="none" opacity="0.6"/>
+  <line x1="560" y1="45" x2="600" y2="45" stroke="#D4A017" stroke-width="1.5" opacity="0.5"/>
+  <line x1="800" y1="45" x2="840" y2="45" stroke="#D4A017" stroke-width="1.5" opacity="0.5"/>
+  
+<!-- op-amp triangle -->
+
+
+  <polygon points="900,18 900,72 950,45" stroke="#7C5CEF" stroke-width="1.8" fill="none" opacity="0.55"/>
+  <line x1="860" y1="32" x2="900" y2="32" stroke="#7C5CEF" stroke-width="1.4" opacity="0.5"/>
+  <line x1="860" y1="58" x2="900" y2="58" stroke="#7C5CEF" stroke-width="1.4" opacity="0.5"/>
+  <line x1="950" y1="45" x2="990" y2="45" stroke="#7C5CEF" stroke-width="1.4" opacity="0.5"/>
+  
+<!-- ground symbol -->
+
+
+  <line x1="990" y1="45" x2="990" y2="72" stroke="#7dd3fc" stroke-width="1.5" opacity="0.5"/>
+  <line x1="970" y1="72" x2="1010" y2="72" stroke="#7dd3fc" stroke-width="1.8" opacity="0.5"/>
+  <line x1="978" y1="79" x2="1002" y2="79" stroke="#7dd3fc" stroke-width="1.4" opacity="0.4"/>
+  <line x1="985" y1="86" x2="995"  y2="86" stroke="#7dd3fc" stroke-width="1.0" opacity="0.3"/>
+</svg>
+</div>
+</div>
 
 
 
@@ -1108,17 +1373,17 @@ the help of generative AI tools.</p>
       
         
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
         
         
           
-          <a href="about/" class="md-footer__link md-footer__link--next" aria-label="Next: About This Course">
+          <a href="chapters/" class="md-footer__link md-footer__link--next" aria-label="Next: List of Chapters">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                About This Course
+                List of Chapters
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1159,7 +1424,7 @@ the help of generative AI tools.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.code.copy", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
